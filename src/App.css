@@ -3,4 +3,22 @@
 {
     margin: 0 auto;
     padding: 0;
+   
+}
+.icons {
+   width: auto;
+   gap: 20px;
+   
+}
+.icon-contact
+{
+    font-size: 35px;
+    
+    animation-delay: 0.3ms;
+    animation: imgUP 0.7s linear infinite alternate;
+}
+.icon-contact:hover
+{
+    color: red;
+    font-size: 50px;
 }

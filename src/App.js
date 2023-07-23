@@ -12,7 +12,7 @@ import Service from './components/Service/Service';
 import SoftwereTesting from './components/Softwere-testing/SoftwereTesting';
 import Python from './components/Python/Python';
 // import Home from './components/Home/Home';
-
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
         <Route path='softwere-testing'element={<SoftwereTesting/>}/>
         <Route path='python'element={<Python/>}/>
       </Routes>
+      <Footer/>
       </BrowserRouter>
       
     </div>

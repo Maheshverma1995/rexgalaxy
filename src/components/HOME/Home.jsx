@@ -1,11 +1,13 @@
 import React from 'react'
+import Slider from '../../Orther/Slider'
 
-function Home() {
+const Home = () => {
   return (
     <div>
-      <h1>home</h1>
+        <Slider/>
     </div>
   )
 }
 
 export default Home
+

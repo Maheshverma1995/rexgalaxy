@@ -11,7 +11,6 @@ import ItTrainning from './components/It-trainning/ItTrainning';
 import Service from './components/Service/Service';
 import SoftwereTesting from './components/Softwere-testing/SoftwereTesting';
 import Python from './components/Python/Python';
-// import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 
 

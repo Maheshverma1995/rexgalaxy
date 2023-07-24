@@ -50,3 +50,48 @@ article {
         }
     }
 }
+
+.icons {
+    width: auto;
+    gap: 20px;
+}
+
+.icon-contact {
+    font-size: 35px;
+    animation-delay: 0.3ms;
+    animation: imgUP 0.7s linear infinite alternate;
+}
+
+.icon-contact:hover {
+    color: red;
+    font-size: 50px;
+}
+
+.Offer-row {
+    background-image: url('../public/Image/Call-to-action_img.jpeg');
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Offer-row:first-child {
+    color: white;
+}
+
+.Offer-row Button {
+    color: white;
+    width: 200px;
+    height: 75px;
+    background-color: chocolate;
+    border-radius: 50px;
+    margin-left: 250px;
+}
+
+.Offer-row h2 {
+    margin-left: 100px;
+}
+
+.Home-frist-h1 {
+    text-align: center;
+}

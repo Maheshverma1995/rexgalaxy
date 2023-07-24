@@ -4,11 +4,13 @@ import Industries from './Industries'
 import { Container, Row } from 'react-bootstrap'
 import CardDatail from './CardDatail'
 import AboutOurCompany from './AboutOurCompany'
+import WeOfferSoftware from './WeOfferSoftware'
+import RequestCallBack from './RequestCallBack'
 
 const Home = () => {
   return (
     <div>
-      <Container>
+     <Container fluid>
         <Row>
           <Slider />
         </Row>
@@ -21,6 +23,13 @@ const Home = () => {
         <Row>
           <AboutOurCompany></AboutOurCompany>
         </Row>
+        <Row>
+          <WeOfferSoftware></WeOfferSoftware>
+        </Row>
+        <Row>
+        <h1 className='Home-frist-h1'>REQUEST A CALL BACK?</h1>
+        </Row>
+        <Row><RequestCallBack/></Row>
       </Container>
 
 

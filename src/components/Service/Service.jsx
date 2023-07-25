@@ -7,6 +7,7 @@ const Service = () => {
           <Image src="./Image/laptop-notebook-man-1071781.jpg.webp"  />
         
         </Row>
+        
         <Container>
           <div><h1>SERVICES WE CAN WORK UPON WITH YOU</h1></div>
         <Row>

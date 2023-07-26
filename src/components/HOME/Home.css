@@ -7,14 +7,26 @@
 {
     display: flex;
     justify-content: center;
+    
    
 }
 .home_card span
 {
-    width: 150px;
-    height: 150px;
+    
+    height: 100px;
+    padding: 10px 20px 20px 10px;
+    font-size: 50px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.home_card:hover span
+{
+    background-color: aqua;
 }
 .home_card:hover h4
 {
-    color: rgb(126, 80, 20);
+    color: aqua;
+}
+.home_card div{
+    margin-left: 50px;
 }

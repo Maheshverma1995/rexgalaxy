@@ -18,13 +18,13 @@ const HeaderNavBar = () => {
         <Row>
           
             
-              <Col xs md="auto" >
+              <Col  md="auto" >
                 <Navbar.Brand href="#home" className="me-4">
                   +91-7411211148
                 </Navbar.Brand>
               </Col>
-              <Col xs md="auto"> <label className="me-2">contact@rexgalaxy.com</label></Col>
-              <Col xs md="auto">A 40, Ithum Noida 62</Col>
+              <Col  md="auto"> <label className="me-2">contact@rexgalaxy.com</label></Col>
+              <Col  md="auto">A 40, Ithum Noida 62</Col>
               <Col md="auto" className="me-0">
                
                   <FaFacebook className="m-3" />

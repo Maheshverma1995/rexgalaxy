@@ -6,12 +6,12 @@ const WeOfferSoftware = () => {
         <div>
             <Container fluid>
                 <Row className='Offer-row  '>
-                    <Col xs={6} md={6}  >
+                    <Col  md={6}  >
                         <h2>WE OFFER SOFTWARE & SUPERIOR SERVICES</h2>
                     </Col>
-                    <Col xs={6} md={6}  >
+                    <Col  md={6}  >
 
-                        <Button variant="outline-primary">LEARN MORE</Button>{' '}
+                        <Button  variant="outline-primary">LEARN MORE</Button>{' '}
                     </Col>
                 </Row>
             </Container>

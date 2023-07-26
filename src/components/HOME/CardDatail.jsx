@@ -1,6 +1,7 @@
 import React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
-import Image from 'react-bootstrap/Image';
+import { Col, Container, Row } from 'react-bootstrap'
+import { FaAdn } from "react-icons/fa";
+
 
 
 
@@ -9,28 +10,69 @@ const CardDatail = () => {
   return (
     <div>
       <Container>
-        <Row xs={1} md={3} className="g-3">
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <Col key={idx}>
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
-                <Card.Body>
-                  <Card.Title>Card title</Card.Title>
-                  <Col xs={6} md={4}>
-                    <Image src="holder.js/171x180" rounded />
-                  </Col>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
+        <Row>
+          <Col md={4} className='home_card' >
+            <span><FaAdn /></span>
+            <div>
+              <h4>Custom Software</h4>
+              <p>
+                RexGalaxy specializes in custom software development, tailoring solutions to meet your unique business needs.</p>
+            </div>
+
+          </Col>
+          <Col md={4} className='home_card' >
+            <span><FaAdn /></span>
+            <div>
+              <h4>Web Portals</h4>
+              <p>
+                RexGalaxy offers top-notch web portal development services, creating intuitive and user-friendly portals that enhance online experiences.</p>
+            </div>
+
+          </Col>
+          <Col md={4} className='home_card' >
+            <span><FaAdn /></span>
+            <div>
+              <h4>Data Analytics</h4>
+              <p>
+
+                RexGalaxy empowers businesses with advanced data analytics solutions, unlocking valuable insights from complex datasets.</p>
+            </div>
+
+          </Col>
+          <Col md={4} className='home_card' >
+            <span><FaAdn /></span>
+            <div>
+              <h4>Website Development</h4>
+              <p>
+                RexGalaxy offers comprehensive website development services, crafting visually stunning and highly functional websites tailored to meet your specific needs.
+
+              </p>
+            </div>
+
+          </Col>
+          <Col md={4} className='home_card' >
+            <span><FaAdn /></span>
+            <div>
+              <h4>CRM Consulting</h4>
+              <p>
+
+                RexGalaxy provides expert CRM consulting services, optimizing customer relationship management strategies for enhanced business performance.</p>
+            </div>
+
+          </Col>
+          <Col md={4} className='home_card' >
+            <span><FaAdn /></span>
+            <div>
+              <h4>Machine Learning</h4>
+              <p>
+                RexGalaxy undertakes cutting-edge machine learning projects, leveraging advanced algorithms and data analysis techniques to deliver innovative and intelligent solutions.</p>
+            </div>
+
+          </Col>
+
         </Row>
       </Container>
-    </div>
+    </div >
   )
 }
 

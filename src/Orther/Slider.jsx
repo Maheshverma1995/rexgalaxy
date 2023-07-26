@@ -6,7 +6,7 @@ function Slider() {
  <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          className="d-block w-100 h-25"
+          className="d-block "
           src="./Image/call-back_img.jpeg"
           alt="First slide"
         />
@@ -17,7 +17,7 @@ function Slider() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 h-25"
+          className="d-block "
           src="./Image/Slider_img-1-1.jpeg"
           alt="Second slide"
         />
@@ -28,7 +28,7 @@ function Slider() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 h-25"
+          className="d-block "
           src="./Image/st_about_accordian.jpg.webp"
           alt="Third slide"
         />

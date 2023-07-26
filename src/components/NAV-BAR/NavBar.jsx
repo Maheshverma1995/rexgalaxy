@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Dropdown from 'react-bootstrap/Dropdown';
+import './Nav_Bar.css'
+import { Container, Nav, Navbar, Offcanvas, Dropdown } from 'react-bootstrap';
 
 function NavBar() {
   const expand = 'lg'; // You can change the value as needed
@@ -15,11 +11,20 @@ function NavBar() {
   const [showSchedule, setShowSchedule] = useState(false);
   const [showInstructors, setShowInstructors] = useState(false);
 
+  // Function to handle the toggle menu bar for smaller screens
+  const handleToggleMenu = () => {
+    setShowITTraining(false);
+    setShowCourses(false);
+    setShowSchedule(false);
+    setShowInstructors(false);
+  };
+
   return (
     <div>
       <Navbar expand={expand} className="bg-body-tertiary mb-3">
         <Container>
           {/* Rest of the code */}
+          <Navbar.Toggle aria-controls={`navbarNav-${expand}`} />
 
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
@@ -33,13 +38,20 @@ function NavBar() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="/">HOME</Nav.Link>
-                <Nav.Link href="about">ABOUT</Nav.Link>
-                <Nav.Link href="contact">CONTACT</Nav.Link>
-                <Dropdown 
+                <Nav.Link href="/" onClick={handleToggleMenu}>
+                  HOME
+                </Nav.Link>
+                <Nav.Link href="/about" onClick={handleToggleMenu}>
+                  ABOUT
+                </Nav.Link>
+                <Nav.Link href="/contact" onClick={handleToggleMenu}>
+                  CONTACT
+                </Nav.Link>
+                
+                <Dropdown
                   as={Nav.Item}
-                  onMouseEnter={() => setShowITTraining(true)}
-                  onMouseLeave={() => {
+                  onMouseOver={() => setShowITTraining(true)}
+                  onMouseOut={() => {
                     setShowITTraining(false);
                     setShowCourses(false);
                     setShowSchedule(false);
@@ -51,75 +63,80 @@ function NavBar() {
                   </Dropdown.Toggle>
                   <Dropdown.Menu
                     className={`mega-menu ${showITTraining ? 'show' : ''}`}
-                    onMouseEnter={() => setShowITTraining(true)}
-                    onMouseLeave={() => setShowITTraining(false)}
+                    onMouseOver={() => setShowITTraining(true)}
+                    onMouseOut={() => setShowITTraining(false)}
                   >
                     <Container>
-                      <div className="row">
-                        <div className="col-md-6">
-                          <h5>Courses</h5>
-                          <ul
-                            className={`mega-submenu ${showCourses ? 'show' : ''}`}
-                            onMouseEnter={() => setShowCourses(true)}
-                            onMouseLeave={() => setShowCourses(false)}
-                          >
-                            <li>
-                              <Nav.Link href="/it-training/courses">Course 1</Nav.Link>
-                            </li>
-                            <li>
-                              <Nav.Link href="/it-training/courses">Course 2</Nav.Link>
-                            </li>
-                            <li>
-                              <Nav.Link href="/it-training/courses">Course 3</Nav.Link>
-                            </li>
-                          </ul>
+                      <Navbar expand={expand} className="bg-body-tertiary mb-3">
+                        <div className="row"id='row'>
+                          <div className=" col-12 col-lg-6">
+                            <h5>Courses</h5>
+                            <ul
+                              className={`mega-submenu ${showCourses ? 'show' : ''}`}
+                              onMouseOver={() => setShowCourses(true)}
+                              onMouseOut={() => setShowCourses(false)}
+                            >
+                              <li>
+                                <Nav.Link href="/it-training/courses">Course 1</Nav.Link>
+                              </li>
+                              <li>
+                                <Nav.Link href="/it-training/courses">Course 2</Nav.Link>
+                              </li>
+                              <li>
+                                <Nav.Link href="/it-training/courses">Course 3</Nav.Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className=" col-12 col-lg-6">
+                            <h5>Schedule</h5>
+                            <ul
+                              className={`mega-submenu ${showSchedule ? 'show' : ''}`}
+                              onMouseOver={() => setShowSchedule(true)}
+                              onMouseOut={() => setShowSchedule(false)}
+                            >
+                              <li>
+                                <Nav.Link href="/it-training/schedule">Schedule 1</Nav.Link>
+                              </li>
+                              <li>
+                                <Nav.Link href="/it-training/schedule">Schedule 2</Nav.Link>
+                              </li>
+                              <li>
+                                <Nav.Link href="/it-training/schedule">Schedule 3</Nav.Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className=" col-12 col-lg-6">
+                            <h5>Instructors</h5>
+                            <ul
+                              className={`mega-submenu ${showInstructors ? 'show' : ''}`}
+                              onMouseOver={() => setShowInstructors(true)}
+                              onMouseOut={() => setShowInstructors(false)}
+                            >
+                              <li>
+                                <Nav.Link href="/it-training/instructors">Instructor 1</Nav.Link>
+                              </li>
+                              <li>
+                                <Nav.Link href="/it-training/instructors">Instructor 2</Nav.Link>
+                              </li>
+                              <li>
+                                <Nav.Link href="/it-training/instructors">Instructor 3</Nav.Link>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div className="col-md-4">
-                          <h5>Schedule</h5>
-                          <ul
-                            className={`mega-submenu ${showSchedule ? 'show' : ''}`}
-                            onMouseEnter={() => setShowSchedule(true)}
-                            onMouseLeave={() => setShowSchedule(false)}
-                          >
-                            <li>
-                              <Nav.Link href="/it-training/schedule">Schedule 1</Nav.Link>
-                            </li>
-                            <li>
-                              <Nav.Link href="/it-training/schedule">Schedule 2</Nav.Link>
-                            </li>
-                            <li>
-                              <Nav.Link href="/it-training/schedule">Schedule 3</Nav.Link>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="col-md-4">
-                          <h5>Instructors</h5>
-                          <ul
-                            className={`mega-submenu ${showInstructors ? 'show' : ''}`}
-                            onMouseEnter={() => setShowInstructors(true)}
-                            onMouseLeave={() => setShowInstructors(false)}
-                          >
-                            <li>
-                              <Nav.Link href="/it-training/instructors">Instructor 1</Nav.Link>
-                            </li>
-                            <li>
-                              <Nav.Link href="/it-training/instructors">Instructor 2</Nav.Link>
-                            </li>
-                            <li>
-                              <Nav.Link href="/it-training/instructors">Instructor 3</Nav.Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                      </Navbar>
                     </Container>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Nav.Link href="service">SERVICES</Nav.Link>
-                <Nav.Link href="python">PYTHON</Nav.Link>
+                <Nav.Link href="/service" onClick={handleToggleMenu}>
+                  SERVICES
+                </Nav.Link>
+                <Nav.Link href="/python" onClick={handleToggleMenu}>
+                  PYTHON
+                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
-          {/* Rest of the code */}
         </Container>
       </Navbar>
     </div>

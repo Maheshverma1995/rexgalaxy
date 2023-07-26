@@ -72,11 +72,12 @@ article {
     height: 300px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+   text-align: center;
 }
 
 .Offer-row:first-child {
     color: white;
+    
 }
 
 .Offer-row Button {
@@ -85,12 +86,10 @@ article {
     height: 75px;
     background-color: chocolate;
     border-radius: 50px;
-    margin-left: 250px;
+    
 }
 
-.Offer-row h2 {
-    margin-left: 100px;
-}
+
 
 .Home-frist-h1 {
     text-align: center;

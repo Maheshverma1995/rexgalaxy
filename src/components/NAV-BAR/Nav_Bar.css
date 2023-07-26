@@ -3,14 +3,12 @@
     margin: 0 auto;
     padding: 0;
 }
-.Dropdown{
-    position: relative;
-}
-.Dropdown1
+#row
 {
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    
-    
+    width: 390px;
+    text-align: center;
+}
+#row ul
+{
+    list-style-type: none;
 }

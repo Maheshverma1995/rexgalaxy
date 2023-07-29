@@ -5,7 +5,7 @@ const WhychooseUs = () => {
   return (
     <Container>
       <Row>
-        <Col  >
+        <Col>
           <div className='p-2' id='Softwere-row1-col1'> <div><h1>WHY CHOOSE US?</h1></div>
             <div ><h3>10 Years Of Undefeated Success</h3></div>
             <div>

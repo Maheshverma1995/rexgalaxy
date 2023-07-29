@@ -4,7 +4,7 @@ import { Container, Row,Col } from 'react-bootstrap'
 
 const BestPractices = () => {
   return (
-    <Container>
+    <Container className='BestPractices'>
     <Row>
         <Col >
             <div><h1>We Follow Best Practices</h1></div>
@@ -18,11 +18,11 @@ const BestPractices = () => {
         </Col>
     </Row>
     <Row>
-        <Col >
-            <div><span><FaRecycle/></span><span>Sustainablility</span></div>
-            <div><span><FaClock/></span><span>Project On Time</span></div>
-            <div><span><FaDesktop/></span><span>Modern Technology</span></div>
-            <div><span><FaPencilRuler/></span><span>Latest Solutions</span></div>
+        <Col className='BestPractices-icon' >
+            <div><span><FaRecycle/></span><p>Sustainablility</p></div>
+            <div><span><FaClock/></span><p>Project On Time</p></div>
+            <div><span><FaDesktop/></span><p>Modern Technology</p></div>
+            <div><span><FaPencilRuler/></span><p>Latest Solutions</p></div>
         </Col>
     </Row>
    

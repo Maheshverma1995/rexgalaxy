@@ -13,7 +13,7 @@ const SoftwereTesting = () => {
         <Row >
        <SoftwareTestingServices/>
         </Row>
-      
+       <Container>
         <Row className='mt-2 mb-2'>
         <Col  md={6} >
             <WhychooseUs/>
@@ -22,10 +22,9 @@ const SoftwereTesting = () => {
                 <CompanyDatail/>
             </Col>
         </Row>
-        
+        </Container>
         <Row className='mt-2 mb-2'>
-          <div><h1>BUILD YOUR DREAM</h1></div>
-          <div><p>Quality Services</p></div>
+          
           <div><QualityServices/></div>
         </Row>
         <Row className='mt-2 mb-2'>

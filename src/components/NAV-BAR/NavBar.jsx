@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Nav_Bar.css'
+import { FaSearch } from "react-icons/fa";
 import { Container, Nav, Navbar, Offcanvas, Dropdown, Row } from 'react-bootstrap';
 
 function NavBar() {
@@ -22,17 +23,17 @@ function NavBar() {
   return (
     <div>
       <Navbar expand={expand} className="bg-body-tertiary mb-3">
-        <Container>
-          {<Row></Row>}
+        <Container className='Toggle'>
+          {<Row><img className='logoimage' src="../../Image/logo.png" style={{width:'180px'}} alt="" /></Row>}
           <Navbar.Toggle aria-controls={`navbarNav-${expand}`} />
-          <Navbar.Offcanvas
+          <Navbar.Offcanvas 
             id={`offcanvasNavbar-expand-${expand}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
             placement="start"
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                Offcanvas
+                <img src="../../Image/logo.png" style={{width:'200px'}}  alt="" Col={6}/>
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -47,7 +48,7 @@ function NavBar() {
                   CONTACT
                 </Nav.Link>
                 <Nav.Link href="/softwereTesting" onClick={handleToggleMenu}>
-                SoftwereTesting
+                SOFTWERE-TESTING
                        </Nav.Link>
                 
                 <Dropdown
@@ -139,7 +140,7 @@ function NavBar() {
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
-          <button className='me-0'>h</button>
+          <button  className='serach-button'><FaSearch/></button>
         </Container>
         
       </Navbar>

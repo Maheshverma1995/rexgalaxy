@@ -20,3 +20,30 @@
         width: 80%;
         align-items: center;
 }
+@media screen and (max-width: 994px){
+    .Toggle{
+        width: auto;
+        margin-right: 0;
+    }
+
+
+}
+@media screen and (max-width: 994px){
+    .logoimage{
+       display: none;
+    }
+
+
+}
+.serach-button
+{
+    font-size: 16px;
+    background-color: #273272;
+    margin: 5px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}

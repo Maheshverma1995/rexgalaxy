@@ -26,46 +26,7 @@
     justify-content: center;
 } */
 
-article {
-    display: flex;
-    justify-content: flex-start;
-    margin: 2px 0;
-    flex-wrap: wrap;
-    >div {
-        animation: imgUp 0.7s linear infinite alternate;
-        margin: 2px;
-        height: 80px;
-        width: 80px;
-        background-color: #fff;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: rgb(244, 12, 113);
-        cursor: pointer;
-        transition: all 0.5s;
-        &:hover {
-            color: rgb(240, 11, 11);
-        }
-    }
-}
 
-.icons {
-    width: auto;
-    gap: 20px;
-}
-
-.icon-contact {
-    font-size: 35px;
-    animation-delay: 0.3ms;
-    animation: imgUP 0.7s linear infinite alternate;
-}
-
-.icon-contact:hover {
-    color: red;
-    font-size: 50px;
-}
 
 .Offer-row {
     background-image: url('../public/Image/Call-to-action_img.jpeg');

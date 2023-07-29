@@ -1,0 +1,156 @@
+.row1
+{
+    background-image: url(../../../public/Image/telephone-contact-recruitment-612061-768x544.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 230px 0;
+}
+.row1 h1
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+/* article {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2px 0;
+    flex-wrap: wrap;
+    >div {
+        animation: imgUp 0.7s linear infinite alternate;
+        margin: 2px;
+        height: 80px;
+        width: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: rgb(244, 12, 113);
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            color: rgb(240, 11, 11);
+        }
+    }
+}
+
+.icons {
+    width: auto;
+    gap: 20px;
+}
+
+.icon-contact {
+    font-size: 35px;
+    animation-delay: 0.3ms;
+    box-sizing: border-box;
+    animation: imgUP 0.7s linear infinite alternate;
+}
+
+.icon-contact:hover {
+    color: red;
+    font-size: 50px;
+} */
+/* Contact Form Styles */
+
+/* 1 style */
+.container1 {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading style */
+  /* .row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+  } */
+  
+  /* Form section styles */
+  .col-lg-6 {
+    animation: fadeInUp 1s ease;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Input field styles */
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Error message styles */
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  /* Submit button style */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Success message styles */
+  .text-success {
+    color: green;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  /* Address section styles */
+  .col-lg-6 {
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+  }
+  
+  /* Follow Us icons styles */
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .icon-contact {
+    font-size: 2rem;
+    color: #007bff;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-contact:hover {
+    transform: scale(1.2);
+  }
+  

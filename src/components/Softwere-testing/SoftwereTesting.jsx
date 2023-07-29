@@ -10,27 +10,29 @@ import BestPractices from './BestPractices'
 const SoftwereTesting = () => {
   return (
     <Container fluid>
-        <Row>
+        <Row >
        <SoftwareTestingServices/>
         </Row>
-        <Row>
-        <Col xs={6} md={6} >
+      
+        <Row className='mt-2 mb-2'>
+        <Col  md={6} >
             <WhychooseUs/>
             </Col>
-            <Col xs={6} md={6} >
+            <Col  md={6} >
                 <CompanyDatail/>
             </Col>
         </Row>
-        <Row>
+        
+        <Row className='mt-2 mb-2'>
           <div><h1>BUILD YOUR DREAM</h1></div>
           <div><p>Quality Services</p></div>
           <div><QualityServices/></div>
         </Row>
-        <Row>
-        <Col xs={6} md={6} >
+        <Row className='mt-2 mb-2'>
+        <Col  md={6} >
             <Sustainability></Sustainability>
             </Col>
-            <Col xs={6} md={6} >
+            <Col  md={6} >
                 <BestPractices/>
             </Col>
         </Row>

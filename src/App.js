@@ -28,6 +28,7 @@ function App() {
         <Route path='service'element={<Service/>}/>
         <Route path='softwere-testing'element={<SoftwereTesting/>}/>
         <Route path='python'element={<Python/>}/>
+        <Route path='softwereTesting'element={<SoftwereTesting/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

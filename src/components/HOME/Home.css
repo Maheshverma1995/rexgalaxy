@@ -13,10 +13,13 @@
 .home_card span
 {
     
-    height: 100px;
-    padding: 10px 20px 20px 10px;
+    height: 90px;
+    padding: 0px 20px 0px 20px;
     font-size: 50px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 50%;
+
+    
     
 }
 .home_card:hover span

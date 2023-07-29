@@ -40,7 +40,7 @@ const CardDatail = () => {
 
           </Col>
           <Col md={4} className='home_card' >
-            <span><FaAdn /></span>
+            <span><FaAdn/></span>
             <div>
               <h4>Website Development</h4>
               <p>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Nav_Bar.css'
-import { Container, Nav, Navbar, Offcanvas, Dropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, Offcanvas, Dropdown, Row } from 'react-bootstrap';
 
 function NavBar() {
   const expand = 'lg'; // You can change the value as needed
@@ -23,9 +23,8 @@ function NavBar() {
     <div>
       <Navbar expand={expand} className="bg-body-tertiary mb-3">
         <Container>
-          {/* Rest of the code */}
+          {<Row></Row>}
           <Navbar.Toggle aria-controls={`navbarNav-${expand}`} />
-
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
             aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -47,6 +46,9 @@ function NavBar() {
                 <Nav.Link href="/contact" onClick={handleToggleMenu}>
                   CONTACT
                 </Nav.Link>
+                <Nav.Link href="/softwereTesting" onClick={handleToggleMenu}>
+                SoftwereTesting
+                       </Nav.Link>
                 
                 <Dropdown
                   as={Nav.Item}
@@ -137,8 +139,11 @@ function NavBar() {
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
+          <button className='me-0'>h</button>
         </Container>
+        
       </Navbar>
+
     </div>
   );
 }

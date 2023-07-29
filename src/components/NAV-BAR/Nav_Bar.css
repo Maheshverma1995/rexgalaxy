@@ -12,3 +12,11 @@
 {
     list-style-type: none;
 }
+.hed-nav-bar
+{
+  
+        display: flex;
+        margin: auto;
+        width: 80%;
+        align-items: center;
+}

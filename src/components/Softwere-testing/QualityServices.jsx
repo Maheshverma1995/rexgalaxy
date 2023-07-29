@@ -5,8 +5,8 @@ const QualityServices = () => {
     return (
         <Container>
             <Row>
-                <Col xs={1} md={4} >
-                    <Card style={{ width: '22rem' }}>
+                <Col className='mt-2 mb-2'  md={4} >
+                    <Card >
                         <Card.Img variant="top" src="./image/software-testing-service-762486-150x150.jpg.webp" />
                         <Card.Body>
                             <Card.Title>Test Planning and Design</Card.Title>
@@ -17,8 +17,8 @@ const QualityServices = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={1} md={4} >
-                    <Card style={{ width: '22rem' }}>
+                <Col className='mt-2 mb-2'  md={4} >
+                    <Card >
                         <Card.Img variant="top" src="./image/speed-internet-high-4028234-150x150.jpg.webp" />
                         <Card.Body>
                             <Card.Title>Test Execution and Defect Tracking</Card.Title>
@@ -29,8 +29,8 @@ const QualityServices = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={1} md={4} >
-                    <Card style={{ width: '22rem' }}>
+                <Col className='mt-2 mb-2'  md={4} >
+                    <Card >
                         <Card.Img variant="top" src="./image/hook-check-mark-yes-881444-150x150.jpg.webp" />
                         <Card.Body>
                             <Card.Title>Test Reporting and Closure</Card.Title>
